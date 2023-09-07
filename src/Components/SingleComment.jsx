@@ -5,8 +5,13 @@ class SingleComment extends Component {
   render() {
     return (
       this.props && (
-        <ListGroup.Item>
-          {this.props.comment.author} {this.props.comment.comment}
+        <ListGroup.Item className="bg-info">
+          <p>
+            Autore:<strong>{this.props.comment.author}</strong>
+          </p>{" "}
+          <p>
+            Commento:<strong>{this.props.comment.comment}</strong>
+          </p>
         </ListGroup.Item>
       )
     );

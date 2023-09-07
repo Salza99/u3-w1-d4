@@ -1,5 +1,6 @@
 import { Component } from "react";
 import CommentsList from "./CommentsList";
+import AddComment from "./AddComment";
 const URL = "https://striveschool-api.herokuapp.com/api/comments/";
 
 class CommentArea extends Component {
@@ -26,6 +27,7 @@ class CommentArea extends Component {
     return (
       <div>
         <CommentsList comments={this.state.comments} />
+        <AddComment comment={this.state.comments} />
       </div>
     );
   }
